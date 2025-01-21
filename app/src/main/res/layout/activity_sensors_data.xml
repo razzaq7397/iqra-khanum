@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/wave__2_11"
+    android:layout_height="match_parent"
+    tools:context=".SensorsDataActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menubar"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:id="@+id/txt"
+        android:padding="12dp"
+        android:text="Sensor Data"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold"
+
+        />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_below="@+id/txt"
+            android:backgroundTint="#8BFFFFFF">
+            
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:weightSum="2"
+                    android:layout_marginHorizontal="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Humidity"
+                        android:layout_weight="1.5"
+                        android:padding="10dp"
+                        android:fontFamily="@font/bree_serif"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_weight="0.5"
+                        android:padding="10dp"
+                        android:id="@+id/txtHum"
+                        android:fontFamily="@font/bree_serif"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?colorPrimaryVariant"
+                    android:layout_marginHorizontal="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:weightSum="2"
+                    android:layout_marginHorizontal="5dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Temperature"
+                        android:layout_weight="1.5"
+                        android:padding="10dp"
+                        android:fontFamily="@font/bree_serif"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_weight="0.5"
+                        android:padding="10dp"
+                        android:id="@+id/txtTemp"
+                        android:fontFamily="@font/bree_serif"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?colorPrimaryVariant"
+                    android:layout_marginHorizontal="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:weightSum="2"
+                    android:layout_marginHorizontal="5dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="PH Level"
+                        android:layout_weight="1.5"
+                        android:padding="10dp"
+                        android:fontFamily="@font/bree_serif"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_weight="0.5"
+                        android:padding="10dp"
+                        android:id="@+id/txtPh"
+                        android:fontFamily="@font/bree_serif"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?colorPrimaryVariant"
+                    android:layout_marginHorizontal="10dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:weightSum="2"
+                    android:layout_marginHorizontal="5dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Moisture Level"
+                        android:layout_weight="1.5"
+                        android:padding="10dp"
+                        android:fontFamily="@font/bree_serif"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_weight="0.5"
+                        android:padding="10dp"
+                        android:fontFamily="@font/bree_serif"
+                        android:textSize="25sp"
+                        android:id="@+id/txtMo"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?colorPrimaryVariant"
+                    android:layout_marginHorizontal="10dp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

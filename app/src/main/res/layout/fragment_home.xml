@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wave__2_11"
+    android:orientation="vertical"
+    tools:context=".homeFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/menubar"
+        android:elevation="10dp"
+        android:padding="12dp"
+        android:text="Stations"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:padding="25dp">
+
+        <TextView
+            android:id="@+id/station1"
+            android:layout_width="150dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/mainpagebuttons"
+            android:drawableTop="@drawable/properties"
+            android:elevation="11dp"
+            android:gravity="center"
+            android:padding="24dp"
+            android:text="Station 1\nFee"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/station2"
+            android:layout_width="150dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/mainpagebuttons"
+            android:drawableTop="@drawable/properties"
+            android:elevation="11dp"
+            android:gravity="center"
+            android:padding="25dp"
+            android:text="Station 2\nFee"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

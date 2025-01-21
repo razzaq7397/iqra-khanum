@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "815231869476",
+    "firebase_url": "https://wireless-car-charging-401da-default-rtdb.firebaseio.com",
+    "project_id": "wireless-car-charging-401da",
+    "storage_bucket": "wireless-car-charging-401da.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815231869476:android:07c7473a99ec0d87b56eb1",
+        "android_client_info": {
+          "package_name": "com.wireless.charging"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdVxZrS6QetYsMFWeoV74sFyZ52dLccRI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/register_bk_color"
+    tools:context=".register">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menubar"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:id="@+id/txt"
+        android:padding="12dp"
+        android:text="SIGN UP"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold"
+
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txt"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/viewParent.headerText.NoMode"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Here’s\nyour first\nstep with \nus! "
+                    android:textColor="@color/whiteTextColor" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_login_hero" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/registerbuttons"
+                android:orientation="vertical"
+                android:padding="15dp"
+                app:cardBackgroundColor="@color/whiteTextColor"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <EditText
+                        android:id="@+id/editTextName"
+                        style="@style/modifiedEditText"
+                        android:hint="Username"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#636363"
+                        android:textSize="15dp" />
+
+
+                    <EditText
+                        android:id="@+id/editTextEmail"
+                        style="@style/modifiedEditText"
+                        android:layout_marginTop="15dp"
+                        android:hint="@string/login_email_hint"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#636363"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/editTextMobile"
+                        style="@style/modifiedEditText"
+                        android:layout_marginTop="15dp"
+                        android:hint="Mobile Number"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#636363"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/editTextPassword"
+                        style="@style/modifiedEditText"
+                        android:layout_marginTop="15dp"
+                        android:hint="@string/login_password_hint"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#636363"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/register"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/loginbutton"
+                        android:text="Register"
+                        android:textColor="@color/white" />
+
+
+                    <TextView
+                        android:id="@+id/account"
+                        style="@style/parent"
+                        android:layout_marginTop="10dp"
+                        android:onClick="onLoginClick"
+                        android:text="Already have an account?"
+                        android:textAlignment="center"
+                        android:textColor="@color/themeColor"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:gravity="center"-->
+<!--                android:weightSum="12">-->
+
+<!--                <View-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_weight="3"-->
+<!--                    android:background="@color/whiteTextColor" />-->
+
+<!--                <TextView-->
+<!--                    style="@style/viewParent.headerText.NoMode"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="6"-->
+<!--                    android:text="Use other Methods"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/whiteTextColor"-->
+<!--                    android:textSize="12sp" />-->
+
+<!--                <View-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_weight="3"-->
+<!--                    android:background="@color/whiteTextColor" />-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="30dp"-->
+<!--                android:gravity="center">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/ic_facebook" />-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:src="@drawable/ic_google_plus" />-->
+<!--            </LinearLayout>-->
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
